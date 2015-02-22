@@ -46,7 +46,7 @@ def sendemail():
     toname = "Samorae"
     #subject = 
     msg = str(user_message)
-     #msg2 = "Hi"
+     #msg2 = "Hi there"
 
 
 
@@ -92,7 +92,7 @@ def sendemail():
 
     server.sendmail(fromaddr, toaddr, messagetosend)
 
-    print "Message sent - %s, %s, %s, %s" % (name, email, subject, user_message)
+    print "Message sentit  - %s, %s, %s, %s" % (name, email, subject, user_message)
 
     server.quit()
     return "<div> <h1> Your email has been sent <i>%s</i>, Thank you </h1></div>" % name
