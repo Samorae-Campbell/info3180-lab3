@@ -1,0 +1,23 @@
+html{
+  /*background-color: green;*/
+}
+
+div{
+  background-color: #E0F8F1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 600px;
+}
+
+
+
+#sendbutton{
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  
+}

@@ -1,0 +1,83 @@
+<!--<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css/contact.css"/>
+    <title> Info3180-lab3 Samorae Campbell </title>
+    
+  </head>
+    <body>
+      
+      <div class="form">
+        <h1> CONTACT FORM </h1>
+        <h3> Fill in this form to contact the site owners </h3>
+        
+        <form action="" method=post class="" id="">
+
+          <strong> Name </strong> <br/> 
+          Please enter your full name. <br/>
+          <input type="text" name="name" id="name" /> <br/> <br/>
+          
+          <strong> Email </strong> <br/>
+          Please enter your email address. <br/>
+          <input type="email" name="email" id="email" /> <br/> <br/>
+          
+          <strong> Subject </strong> <br/>
+          <input type="text" name="subject" id="subject" /> <br/> <br/>
+          
+          <strong> Message </strong> <br/>
+          Please enter the message you want to send. <br/>
+          <textarea name="message" id="message" cols="80" rows="10"> </textarea>  <br/> <br/>
+          
+          <input type="submit" value="Send" id="sendbutton" onclick = "" />
+          <br/>
+          <br/>
+          <br/>
+        </form>
+      </div>
+      
+  </body>
+  
+
+</html>-->
+
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+ <h2>Login</h2> 
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }} </p>
+  {% endif %} 
+<div class="form">
+        <h1> CONTACT FORM </h1>
+        <h3> Fill in this form to contact the site owners </h3>
+        
+        <form action="{{url_for('sendemail')}}"  method="POST" class="" id="">
+
+          <strong> Name </strong> <br/> 
+          Please enter your full name. <br/>
+          <input type="text" name="name" id="name" /> <br/> <br/>
+          
+          <strong> Email </strong> <br/>
+          Please enter your email address. <br/>
+          <input type="email" name="email" id="email" /> <br/> <br/>
+          
+          <strong> Subject </strong> <br/>
+          <input type="text" name="subject" id="subject" /> <br/> <br/>
+          
+          <strong> Message </strong> <br/>
+          Please enter the message you want to send. <br/>
+          <textarea name="message" id="message" cols="80" rows="10"> </textarea>  <br/> <br/>
+          
+          <input type="submit" value="Send" id="sendbutton" onclick = "" />
+          <br/>
+          <br/>
+          <br/>
+        </form>
+      </div>
+{% endblock %}
