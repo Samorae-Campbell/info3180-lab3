@@ -11,7 +11,7 @@ def profile():
 
 def timeinfo():
   now = time.strftime("%c")
-  # now = "Time: "+time.strftime("%I:%M:%S")+" "+time.strftime("%A %d/%m/%Y")
+  #  now = "Time: "+time.strftime("%I:%M:%S")+" "+time.strftime("%A %d/%m/%Y")
   now = "Date: "+time.strftime("%A %d/%b/%Y")
   # name = "Samorae"
   # 12-hr time format -- print (time.strftime("%I:%M:%S"))

@@ -12,7 +12,7 @@ def sendemail():
     subject = request.form['subject']
     message = request.form['message']
     return "<html> <head><title> Sam</title> </head> <body> <p> %s,  %s</p> </body </html> " % (name, message)
-  return "Hi"
+  return "Hi im sam"
   
   
 app.run(debug=True,host="0.0.0.0",port=8080)

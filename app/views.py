@@ -82,7 +82,7 @@ def sendemail():
 
     password = 'sunshinemkc'
 
-    # The actual mail send
+    #  The actual mail send
 
     server = smtplib.SMTP('smtp.gmail.com:587')
 
